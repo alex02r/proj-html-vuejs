@@ -168,12 +168,12 @@ export default {
             ul {
                 color: $white;
                 list-style: none;
-                margin-top: 30px;
+                margin-top: 50px;
 
                 li {
                     font-size: 15px;
                     padding: 10px;
-                    margin: 0;
+                    margin: 10px 0;
                     border-bottom: 1px solid grey;
                 }
             }
