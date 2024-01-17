@@ -1,12 +1,13 @@
 <script>
+import AppSlider from './AppSlider.vue';
 export default {
-    
+    components:{
+        AppSlider
+    }
 }
 </script>
 <template lang="">
-    <div>
-        
-    </div>
+    <AppSlider/>
 </template>
 <style lang="">
     
