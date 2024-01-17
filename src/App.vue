@@ -7,7 +7,32 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
-  }
+  },
+
+  data() {
+    return {
+      list: [{
+        name: 'trainings',
+        links: [
+          'ridinglesson',
+          'safedriving',
+          'mountainbike',
+          'traildrive',
+          'pedaling'
+        ]
+      }],
+      quicklist: [{
+        name: 'quicklinks',
+        links: [
+          'home',
+          'aboutus',
+          'blog',
+          'packages',
+          'contact'
+        ]
+      }],
+    }
+  },
 }
 </script>
 <template lang="">
