@@ -39,9 +39,9 @@ export default {
 </script>
 <template lang="">
     <div class="">
-        <img src="" alt="">
+        <img :src="listImg[currentImg].img" :alt="listImg[currentImg].name">
         <div class="">
-            <h1></h1>
+            <h1>{{ listImg[currentImg].name }}</h1>
             <span>Learn cycling from the pros.</span>
             <button>Learn More -></button>
         </div>
