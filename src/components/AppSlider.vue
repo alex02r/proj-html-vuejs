@@ -2,6 +2,7 @@
 export default {
     data() {
         return {
+            currentImg: 0,
             listImg:[
                 {
                     name: 'Professional Cycling Club',
@@ -16,6 +17,22 @@ export default {
                     img: '../assets/slider-bike-12.jpg'
                 }
             ]
+        }
+    },
+    methods: {
+        nextImg(){
+            if (this.currentImg == listImg.length - 1) {
+                this.currentImg = 0;
+            }else{
+                this.currentImg++;
+            }
+        },
+        prevImg(){
+            if (this.currentImg == 0) {
+                this.currentImg = listImg.length - 1;
+            }else{
+                this.currentImg++;
+            }
         }
     },
 }
