@@ -1,17 +1,13 @@
 <script>
-
-import AppEvent from './AppEvent.vue';
+import AppSlider from './AppSlider.vue';
 export default {
-    components: {
-        AppEvent
-    
-  },
+    components:{
+        AppSlider
+    }
 }
 </script>
 <template lang="">
-    <div>
-        <AppEvent />
-    </div>
+    <AppSlider/>
 </template>
 <style lang="">
     
