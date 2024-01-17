@@ -2,6 +2,7 @@
 export default {
     data() {
         return {
+            autoscroll: null,
             currentImg: 0,
             listImg:[
                 {
@@ -19,9 +20,12 @@ export default {
             ]
         }
     },
+    created() {
+        this.setAutoscroll()
+    },
     methods: {
         nextImg(){
-            if (this.currentImg == listImg.length - 1) {
+            if (this.currentImg == this.listImg.length - 1) {
                 this.currentImg = 0;
             }else{
                 this.currentImg++;
@@ -29,10 +33,15 @@ export default {
         },
         prevImg(){
             if (this.currentImg == 0) {
-                this.currentImg = listImg.length - 1;
+                this.currentImg = this.listImg.length - 1;
             }else{
                 this.currentImg++;
             }
+        },
+        setAutoscroll(){
+            this.autoscroll = setInterval(()=>{
+                this.nextImg();
+            }, 8000)
         }
     },
 }
