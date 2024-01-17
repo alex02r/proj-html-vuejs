@@ -18,20 +18,25 @@ export default {
                 </div>
             </div>
             <div class="headerCol d-flex justify-content-center">
-                <ul>
-                    <li v-for="(item, index) in menu" :key="index" >{{item}}</li>
+                <ul class="d-flex list-unstyled">
+                    <li class="fw-bold mx-2 px-1" v-for="(item, index) in menu" :key="index" >{{item}}</li>
                 </ul>
             </div>
             <div class="headerCol d-flex justify-content-end ">
-                <div class="hamburgerMenu"><i class="fas fa-bars"></i></div>
-                <div>Upcoming Events<i class="fas fa-arrow-right"></i></div>
+                <div class="hamburgerMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="bg-black text-light btn-padding fw-bold ">
+                    <i class="fas fa-helmet-safety text-light"></i>
+                    <a class="text-decoration-none text-light" href="" >Upcoming Events<i class="fas fa-arrow-right text-light"></i></a>
+                </div>
             </div>
         </div>
     </div>
 </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header{
     height: 120px;
     background-color: white;
@@ -45,6 +50,10 @@ header{
         img{
             width: 300px;
         }
+    }
+
+    .btn-padding{
+        padding: 20px 40px;
     }
 }
 </style>

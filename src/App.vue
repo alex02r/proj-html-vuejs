@@ -25,11 +25,11 @@ export default {
       {
         name: 'quicklinks',
         links: [
-          'home',
-          'aboutus',
-          'blog',
-          'packages',
-          'contact'
+          'Home',
+          'About Us',
+          'Blog',
+          'Packages',
+          'Contact'
         ]
       }
     ],
