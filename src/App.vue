@@ -11,10 +11,12 @@ export default {
 }
 </script>
 <template lang="">
-  <AppHeader />
-  <AppMain />
-  <AppFooter />
+    <AppHeader />
+    <AppMain />
+    <AppFooter />
 </template>
+
+
 <style lang="scss">
-  @use './styles/generals.scss';
+   @use './styles/generals.scss';
 </style>
