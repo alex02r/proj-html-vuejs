@@ -1,18 +1,11 @@
 <script>
-
-import AppEvents from './AppEvent.vue';
 export default {
-    components: {
-        AppEvents,
-
-    },
+    
 }
 </script>
 <template lang="">
     <div>
         
-
-        <AppEvents />
     </div>
 </template>
 <style lang="">
