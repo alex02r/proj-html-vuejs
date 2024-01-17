@@ -7,11 +7,38 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
-  }
+  },
+
+  data() {
+    return {
+      list: [
+        {
+        name: 'trainings',
+        links: [
+          'ridinglesson',
+          'safedriving',
+          'mountainbike',
+          'traildrive',
+          'pedaling'
+        ]
+      },
+      {
+        name: 'quicklinks',
+        links: [
+          'Home',
+          'About Us',
+          'Blog',
+          'Packages',
+          'Contact'
+        ]
+      }
+    ],
+    }
+  },
 }
 </script>
 <template lang="">
-  <AppHeader />
+  <AppHeader :menu="list[1].links"/>
   <AppMain />
   <AppFooter />
 </template>
