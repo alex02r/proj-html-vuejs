@@ -11,7 +11,8 @@ export default {
 
   data() {
     return {
-      list: [{
+      list: [
+        {
         name: 'trainings',
         links: [
           'ridinglesson',
@@ -20,8 +21,8 @@ export default {
           'traildrive',
           'pedaling'
         ]
-      }],
-      quicklist: [{
+      },
+      {
         name: 'quicklinks',
         links: [
           'home',
@@ -30,13 +31,14 @@ export default {
           'packages',
           'contact'
         ]
-      }],
+      }
+    ],
     }
   },
 }
 </script>
 <template lang="">
-  <AppHeader />
+  <AppHeader :menu="list[1].links"/>
   <AppMain />
   <AppFooter />
 </template>
