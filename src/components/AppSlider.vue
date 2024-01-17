@@ -1,6 +1,23 @@
 <script>
 export default {
-    
+    data() {
+        return {
+            listImg:[
+                {
+                    name: 'Professional Cycling Club',
+                    img: '../assets/slider-bike-4.jpg'
+                },
+                {
+                    name: 'Unforgettable Cycling Experience',
+                    img: '../assets/slider-bike-9.jpg'
+                },
+                {
+                    name: 'Learn Mountain Bike From The Expert',
+                    img: '../assets/slider-bike-12.jpg'
+                }
+            ]
+        }
+    },
 }
 </script>
 <template lang="">
