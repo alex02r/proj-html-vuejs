@@ -18,17 +18,17 @@ export default {
                 </div>
             </div>
             <div class="headerCol d-flex justify-content-center">
-                <ul class="d-flex list-unstyled">
-                    <li class="fw-bold mx-2 px-1" v-for="(item, index) in menu" :key="index" >{{item}}</li>
+                <ul class="m-0 d-flex list-unstyled">
+                    <li class="fw-bold mx-1 px-1 fs-5" v-for="(item, index) in menu" :key="index" ><a class="text-decoration-none text-dark " href="#">{{item}}</a></li>
                 </ul>
             </div>
             <div class="headerCol d-flex justify-content-end ">
-                <div class="hamburgerMenu">
-                    <i class="fas fa-bars"></i>
+                <div class="hamburgerMenu d-flex  align-items-center px-4 fs-2 ">
+                    <a class="text-decoration-none text-dark" href="#"><i class="fas fa-bars"></i></a>
                 </div>
-                <div class="bg-black text-light btn-padding fw-bold ">
-                    <i class="fas fa-helmet-safety text-light"></i>
-                    <a class="text-decoration-none text-light" href="" >Upcoming Events<i class="fas fa-arrow-right text-light"></i></a>
+                <div class="bg-black text-light btn-padding fw-bold d-flex align-items-center ">
+                    <a href="#"><i class="fas fa-helmet-safety text-light fs-2 pe-4"></i></a>
+                    <a class="text-decoration-none text-light fs-5" href="#" >Upcoming Events<i class="fas fa-arrow-right text-light ms-2 fs-5"></i></a>
                 </div>
             </div>
         </div>
