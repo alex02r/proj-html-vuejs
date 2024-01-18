@@ -2,7 +2,7 @@
 import AppTrainers from './AppTrainers.vue';
 export default {
     name: 'AppCards',
-    components:{
+    components: {
         AppTrainers
     },
     data() {
@@ -68,7 +68,7 @@ export default {
             <div class="row">
                 <div class="d-flex justify-content-center">
                     <div class="medal-square d-flex justify-content-center align-items-center">
-                        <i class="fa-solid fa-medal"></i>
+                        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1851/1851036.png" alt="">
                     </div>
                 </div>
                 <h2 class="fw-bolder text-center mt-3">Special Packs</h2>
@@ -85,7 +85,7 @@ export default {
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
-                                    <i class="fa-regular fa-handshake"></i>
+                                    <img class="icon" src="https://cdn-icons-png.flaticon.com/128/3562/3562049.png" alt="">
                                     <h3 class="fw-bolder">Basic</h3>
                                     <p>Learn to ride a bike from the professionals</p>
                                     <ul>
@@ -116,7 +116,7 @@ export default {
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
-                                    <i class="fa-regular fa-handshake"></i>
+                                    <img class="icon" src="https://cdn-icons-png.flaticon.com/128/972/972998.png" alt="">
                                     <h3 class="fw-bolder">Standard</h3>
                                     <p>Learn to ride a bike from the professionals</p>
                                     <ul>
@@ -146,7 +146,7 @@ export default {
                             <div class="inner-card">
                                 <!-- Fronte della card -->
                                 <div class="front-card">
-                                    <i class="fa-regular fa-handshake"></i>
+                                    <img class="icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt="">
                                     <h3 class="fw-bolder">Premium</h3>
                                     <p>Learn to ride a bike from the professionals</p>
                                     <ul>
@@ -216,9 +216,9 @@ export default {
         background-color: $black;
         border-radius: 5px;
 
-        i {
-            color: $white;
-            font-size: 50px;
+        .icon {
+            width: 50px;
+            filter: invert(100%);
         }
     }
 
@@ -249,6 +249,11 @@ export default {
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
 
+                .icon {
+                    width: 50px;
+                    filter: invert(100%);
+                }
+
                 i {
                     color: $white;
                     font-size: 50px;
@@ -268,7 +273,7 @@ export default {
 
                 ul {
                     list-style: none;
-                    margin-top: 80px;
+                    margin: 50px 0;
                     padding: 0 30px;
 
                     li {
@@ -316,8 +321,9 @@ export default {
                 }
             }
         }
-        .card-body{
-            p{
+
+        .card-body {
+            p {
                 color: $grey;
             }
         }
@@ -336,12 +342,20 @@ export default {
         .card {
             box-shadow: 0 0 10px 5px $grey;
 
-            button {
-                width: 50%;
-                padding: 20px;
-                background-color: black;
-                color: $white;
+            .card-body {
+                button {
+                    width: 50%;
+                    padding: 20px;
+                    background-color: black;
+                    color: $white;
+                }
+
+                p {
+                    color: #545454;
+                    font-size: 15px;
+                }
             }
+
         }
 
     }
