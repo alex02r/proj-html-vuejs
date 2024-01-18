@@ -13,7 +13,7 @@ export default {
     return {
       list: [
         {
-        name: 'trainings',
+        name: 'Trainings',
         links: [
           'Riding Lesson',
           'Safe Driving',
@@ -23,7 +23,7 @@ export default {
         ]
       },
       {
-        name: 'quicklinks',
+        name: 'Quick Links',
         links: [
           'Home',
           'About Us',
