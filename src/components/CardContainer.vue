@@ -255,7 +255,7 @@ export default {
                     border-bottom: 1px solid grey;
 
                     i {
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                 }
             }
