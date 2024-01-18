@@ -1,17 +1,5 @@
 <script>
 export default {
-<<<<<<< HEAD
-    
-}
-</script>
-<template lang="">
-    <div>
-        
-    </div>
-</template>
-<style lang="">
-    
-=======
      data() {
           return {
 
@@ -140,7 +128,6 @@ export default {
                     }
 
                ],
-               //     console.log('lista_eventi')
           }
 
           
@@ -159,9 +146,9 @@ export default {
 
                     <div class="d-flex justify-content-between mt-5">
                          <h3 class="fw-lighter">Events</h3>
-                         <div>
-                              <button class="p-1" @click="col=true"><i class="fa-solid fa-square"></i></button>
-                              <button class="p-1 " @click="col=false"><i class="fa-solid fa-bars"></i></button>
+                         <div class="buttons">
+                              <button class="p-2" @click="col=true"><i class="fa-solid fa-square"></i></button>
+                              <button class="p-2 " @click="col=false"><i class="fa-solid fa-bars"></i></button>
                             <!-- :class="bg-dark text-light" -->
                          </div>
                     </div>
@@ -206,7 +193,11 @@ export default {
      background-color: $second_white;
 }
 
-
+.buttons{
+     button{
+          border: none;
+     }
+}
 .col-12{
 
      .carta{
@@ -304,5 +295,4 @@ p {
      margin: 0;
 }
 
->>>>>>> origin/events
 </style>
