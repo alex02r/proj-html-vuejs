@@ -13,7 +13,7 @@ export default {
 <header>
     <div class='container'>
         <div class="row justify-content-between align-items-center">
-            <div class="col-3">
+            <div class="col-2">
                 <div class="logo">
                     <img src="../assets/logo-gobike.png" alt="">
                 </div>
@@ -21,10 +21,10 @@ export default {
             <div class="col-6">
                 <div class="d-flex justify-content-center">
                     <ul class="m-0 d-flex list-unstyled">
-                        <li class="fw-bold mx-1 px-1 fs-5" v-for="(item, index) in menu" :key="index" >
+                        <li class="fw-medium mx-1 px-1 fs-5" v-for="(item, index) in menu" :key="index" >
                             <a class="text-decoration-none text-dark" href="#">{{item}}</a>
                         </li>
-                        <li class="fw-bold mx-1 px-1 fs-5">
+                        <li class="fw-medium mx-1 px-1 fs-5">
                             <div class="dropdown">
                                 <a class="text-decoration-none text-dark" href="#">Trainings</a>
                                 <div class="dropdown-content">
@@ -39,15 +39,13 @@ export default {
                     </ul>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="btn-container d-flex justify-content-end">
-                    <div class="hamburgerMenu d-flex  align-items-center px-4 fs-2 ">
+            <div class="col-4">
+                <div class="d-flex">
+                    <div class="hamburgerMenu d-flex align-items-center px-4 fs-2 ">
                         <a class="text-decoration-none text-dark" href="#"><i class="fas fa-bars"></i></a>
                     </div>
-                    <div class="bg-black text-light btn-padding fw-bold d-flex align-items-center ">
-                        <div class="icon-margin">
-                            <a href="#"><img class="helmet_icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt=""></a>
-                        </div>
+                    <div class="my-btn">
+                        <img class="helmet_icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt="">
                         <a class="text-decoration-none text-light" href="#" >Upcoming Events<i class="fas fa-arrow-right text-light ms-2 fs-5"></i></a>
                     </div>
                 </div>
@@ -58,9 +56,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partial/variables' as *;
 header {
     width: 100%;
-    height: 110px;
     background-color: white;
     position: fixed;
     z-index: 1;
@@ -107,14 +105,19 @@ header {
     .dropdown:hover .dropdown-content {
         display: block;
     }
-    .logo {
-        img {
-            width: 300px;
+
+    .my-btn{
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: $black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        img{
+
+            width: 80px;
         }
-    }
-    
-    .btn-padding {
-        padding: 10px 30px;
     }
 
     .icon-margin{
