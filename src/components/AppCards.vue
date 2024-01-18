@@ -27,25 +27,25 @@ export default {
             ],
             new_articles: [
                 {
-                    image: '/src/news-bike5-300x180.jpg',
+                    image: '/src/assets/news-bike5-300x180.jpg',
                     date: '22.06.2022 - Bike',
                     title: 'Road bike or mountain bike?',
                     text: 'Compared to similar road bikes with a solid frame structure. [...]'
                 },
                 {
-                    image: '/src/news-bike6-300x180.jpg',
+                    image: '/src/assets/news-bike6-300x180.jpg',
                     date: '22.06.2022 - Bike',
                     title: 'What is mountain biking called?',
                     text: 'Mountain biking is one of the most popular outdoor sports. [...]'
                 },
                 {
-                    image: '/src/news-bike3-300x180.jpg',
+                    image: '/src/assets/news-bike3-300x180.jpg',
                     date: '22.06.2022 - Bike',
                     title: 'How much shoul you cycle a day?',
                     text: 'In order to get the right benefit from the exercise. [...]'
                 },
                 {
-                    image: '/src/news-bike4-300x180.jpg',
+                    image: '/src/assets/news-bike4-300x180.jpg',
                     date: '22.06.2022 - Bike',
                     title: 'How long does it take 5 km by bike?',
                     text: 'It takes 5 km and 10 minutes. sir. But at. [...]'
@@ -179,14 +179,16 @@ export default {
                 <!-- Card -->
                 <div class="cards d-flex justify-content-center">
                     <div class="col-3" v-for="(card, index) in new_articles" :key="index">
-                        <div class="card mx-4">
-                            <!-- <img :src="{{card.image}}" class="" alt="{{card.title}}"> -->
-                            <div class="card-body">
+                        <div class="card mx-4 shadow">
+                            <div class="pt-3 px-3">
+                                <img  class="card-img-top" :src="card.image" :alt="card.title">
                                 <p class="text-center">{{card.date}}</p>
-                                <h4 class="text-center">{{card.title}}</h4>
-                                <p class="text-center mt-5">{{card.text}}</p> 
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-center fw-bold">{{card.title}}</h5>
+                                <p class="mt-3">{{card.text}}</p> 
                                 <div class="d-flex justify-content-center">
-                                    <button class="my-2">More</button>
+                                    <button class="my-2 border border-0 rounded-1">More</button>
                                 </div>
                             </div>
                         </div>
@@ -308,6 +310,11 @@ export default {
                     color: $white;
                     border-radius: 5px;
                 }
+            }
+        }
+        .card-body{
+            p{
+                color: $grey;
             }
         }
 
