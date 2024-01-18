@@ -136,7 +136,7 @@ export default {
 }
 </script>
 <template lang="">
-     <div class="container">
+     <div class="container" v-motion-fade :delay="200">
           <div class="row">
                <div class="col-12">
                     <div class="text-center">
