@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'CardContainer',
+    name: 'AppCards',
     data() {
         return {
             li_packs: [

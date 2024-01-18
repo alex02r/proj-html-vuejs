@@ -1,14 +1,14 @@
 <script>
-import CardContainer from './CardContainer.vue';
+import AppCards from './AppCards.vue';
 export default {
     components: {
-        CardContainer
+        AppCards
     }
 }
 </script>
 <template lang="">
     <div>
-        <CardContainer />
+        <AppCards />
     </div>
 </template>
 <style lang="">
