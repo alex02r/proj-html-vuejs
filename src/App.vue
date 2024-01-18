@@ -15,11 +15,11 @@ export default {
         {
         name: 'trainings',
         links: [
-          'ridinglesson',
-          'safedriving',
-          'mountainbike',
-          'traildrive',
-          'pedaling'
+          'Riding Lesson',
+          'Safe Driving',
+          'Mountain Bike',
+          'Trail Drive',
+          'Pedaling'
         ]
       },
       {
@@ -40,7 +40,7 @@ export default {
 <template lang="">
   <AppHeader :menu="list[1].links"/>
   <AppMain />
-  <AppFooter />
+  <AppFooter :array_list="list"/>
 </template>
 <style lang="scss">
   @use './styles/generals.scss';
