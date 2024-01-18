@@ -29,8 +29,12 @@ export default {
                     </div>
                 </div>
                 <div class="col-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam temporibus eum, adipisci maiores quidem dolor quos voluptate quam quae obcaecati explicabo cupiditate itaque impedit dolores consequuntur vero sapiente ea unde!
-    
+                    <h3>Join Our Newsletter</h3>
+                    <span>Subscribe to receive useful information.</span>
+                    <div class="footer-input-group">
+                        <input type="text" class="my-input" placeholder="Your Email Address" id="email" name="email">
+                        <div class="my-button"> Subscribe <i class="fas fa-arrow-right-long"></i></div>
+                    </div>
                 </div>
                 <div class="col-2">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam temporibus eum, adipisci maiores quidem dolor quos voluptate quam quae obcaecati explicabo cupiditate itaque impedit dolores consequuntur vero sapiente ea unde!
@@ -61,9 +65,10 @@ export default {
         .list-footer{
             list-style: none;
             li{
-                margin: 20px 0;
+                margin: 10px 0;
                 i{
                     font-size: 25px;
+                    margin-right: 10px;
                 }
             }
         }
@@ -72,11 +77,26 @@ export default {
             gap: 10px;
             margin: 0 20px;
             .icon{
-                border: 1px solid $grey;
-                padding: 0 10px;
+                border: 1px solid grey;
+                padding: 5px 20px;
                 i{
                     font-size: 30px;
                 }
+            }
+        }
+        .footer-input-group{
+            margin-top: 20px;
+            .my-input{
+                width: 100%;
+                border: none;
+                padding: 20px;
+            }
+            .my-button{
+                margin: 5px 0;
+                padding: 20px;
+                background-color: $white;
+                color: $black;
+                text-align: center;
             }
         }
     }
