@@ -7,8 +7,26 @@ export default {
     <footer class="pt-5">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam temporibus eum, adipisci maiores quidem dolor quos voluptate quam quae obcaecati explicabo cupiditate itaque impedit dolores consequuntur vero sapiente ea unde!
+                <div class="col-3">
+                    <div class="logo">
+                        <img src="../assets/logo-footer-gobike.png" alt="Logo">
+                    </div>
+                    <ul class="list-footer">
+                        <li><i class="fas fa-location-dot"></i> New Jersey, USA</li>
+                         <li><i class="fas fa-phone-volume"></i> +1 (234) 567 89 10</li>
+                         <li><i class="fas fa-envelope"></i> example@example.com</li>
+                    </ul>
+                    <div class="icons">
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam temporibus eum, adipisci maiores quidem dolor quos voluptate quam quae obcaecati explicabo cupiditate itaque impedit dolores consequuntur vero sapiente ea unde!
@@ -36,6 +54,30 @@ export default {
     @use '../styles/generals.scss';
     footer{
         background-color: $black;
-        color: $white;
+        color: $grey;
+        .logo{
+            width: 80%;
+        }
+        .list-footer{
+            list-style: none;
+            li{
+                margin: 20px 0;
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            gap: 10px;
+            margin: 0 20px;
+            .icon{
+                border: 1px solid $grey;
+                padding: 0 10px;
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
     }
 </style>
