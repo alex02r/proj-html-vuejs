@@ -8,16 +8,18 @@ export default {
         AppSlider,
         jumbotron,
         AppEvents,
-        AppCards
+        AppCards,
     }
 }
 </script>
+
 <template lang="">
     <AppSlider/>
     <jumbotron/>
     <AppEvents />
     <AppCards />
 </template>
+
 <style lang="">
     
 </style>

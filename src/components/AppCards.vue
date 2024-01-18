@@ -1,6 +1,10 @@
 <script>
+import AppTrainers from './AppTrainers.vue';
 export default {
     name: 'AppCards',
+    components:{
+        AppTrainers
+    },
     data() {
         return {
             li_packs: [
@@ -57,7 +61,7 @@ export default {
 </script>
 
 <template lang="">
-
+    <AppTrainers/>
     <!-- Sezione Special Packs-->
     <section class="special-packs">
         <div class="container">
