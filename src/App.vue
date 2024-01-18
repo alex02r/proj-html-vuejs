@@ -42,6 +42,8 @@ export default {
   <AppMain />
   <AppFooter :array_list="list"/>
 </template>
+
+
 <style lang="scss">
-  @use './styles/generals.scss';
+   @use './styles/generals.scss';
 </style>
