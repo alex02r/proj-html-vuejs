@@ -35,7 +35,7 @@ export default {
             if (this.currentImg == 0) {
                 this.currentImg = this.listImg.length - 1;
             }else{
-                this.currentImg++;
+                this.currentImg--;
             }
         },
         setAutoscroll(){
