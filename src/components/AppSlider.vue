@@ -54,8 +54,8 @@ export default {
             <h5 class="my-4">Learn cycling from the pros.</h5>
             <button class="my-button">Learn More -></button>
         </div>
-        <div class="next" @click="nextImg"></div>
-        <div class="prev" @click="prevImg"></div>
+        <div class="next" @click="nextImg"> <i class="fas fa-angle-right"></i></div>
+        <div class="prev" @click="prevImg"> <i class="fas fa-chevron-left"></i></div>
     </div>
 </template>
 <style lang="scss" scoped>
@@ -84,6 +84,9 @@ export default {
             }
         }
         .next, .prev{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -91,6 +94,9 @@ export default {
             height: 60px;
             background-color: $black;
             color: $white;
+            i{
+                font-size: 25px;
+            }
         }
         .next{
             right: 10px;
