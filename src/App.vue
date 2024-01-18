@@ -13,17 +13,17 @@ export default {
     return {
       list: [
         {
-        name: 'trainings',
+        name: 'Trainings',
         links: [
-          'ridinglesson',
-          'safedriving',
-          'mountainbike',
-          'traildrive',
-          'pedaling'
+          'Riding Lesson',
+          'Safe Driving',
+          'Mountain Bike',
+          'Trail Drive',
+          'Pedaling'
         ]
       },
       {
-        name: 'quicklinks',
+        name: 'Quick Links',
         links: [
           'Home',
           'About Us',
@@ -40,7 +40,7 @@ export default {
 <template lang="">
   <AppHeader :menu="list[1].links"/>
   <AppMain />
-  <AppFooter />
+  <AppFooter :array_list="list"/>
 </template>
 <style lang="scss">
   @use './styles/generals.scss';
