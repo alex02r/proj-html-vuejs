@@ -3,7 +3,7 @@ export default {
      data() {
           return {
 
-               col: false,
+               col: true,
                lista_eventi: [
 
                     {
@@ -153,7 +153,7 @@ export default {
                          </div>
                     </div>
                </div>
-               <div :class="!col ? 'col-4 mt-4' : 'col-12'" v-for="eventi, index in lista_eventi">
+               <div :class="col ? 'col-4 mt-4' : 'col-12'" v-for="eventi, index in lista_eventi">
 
                     <div class="carta mb-3">
                           <img :src="eventi.img" class="" alt="...">
@@ -185,8 +185,8 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-@use '../styles/generals.scss' as*;
-@use '../styles/partial/variables' as*;
+@use '../styles/partial/variables' as *;
+@use '../styles/generals.scss';
 
 
 .btn-crema {
@@ -253,15 +253,13 @@ export default {
      .carta{
           .inizio_fine{
           display: none;
-     }
+          }
      }
 }
 .carta {
      position: relative;
      border: 1px solid rgb(199, 199, 199);
      border-radius: 5px;
-
-    
      .card-b{
           margin-left: 10px;
      }
@@ -274,7 +272,7 @@ export default {
           position: absolute;
           top: 10px;
           left: 10px;
-          background-color: white;
+          background-color: $white;
           border-radius: 8px;
 
           span{
