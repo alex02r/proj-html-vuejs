@@ -1,4 +1,5 @@
 <script>
+import AppCards from './AppCards.vue';
 import AppEvents from './AppEvent.vue';
 import jumbotron from './jumbotron.vue';
 import AppSlider from './AppSlider.vue';
@@ -6,7 +7,8 @@ export default {
     components:{
         AppSlider,
         jumbotron,
-        AppEvents
+        AppEvents,
+        AppCards
     }
 }
 </script>
@@ -14,6 +16,7 @@ export default {
     <AppSlider/>
     <jumbotron/>
     <AppEvents />
+    <AppCards />
 </template>
 <style lang="">
     
