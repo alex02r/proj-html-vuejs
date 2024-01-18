@@ -136,7 +136,7 @@ export default {
 }
 </script>
 <template lang="">
-     <div class="container">
+     <div class="container" v-motion :delay="200" :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0}">
           <div class="row">
                <div class="col-12">
                     <div class="text-center">
@@ -147,13 +147,13 @@ export default {
                     <div class="d-flex justify-content-between mt-5">
                          <h3 class="fw-lighter">Events</h3>
                          <div class="buttons">
-                              <button class="p-2" @click="col=true"><i class="fa-solid fa-square"></i></button>
-                              <button class="p-2 " @click="col=false"><i class="fa-solid fa-bars"></i></button>
+                              <button class="p-2" @click="col = true"><i class="fa-solid fa-square"></i></button>
+                              <button class="p-2 " @click="col = false"><i class="fa-solid fa-bars"></i></button>
                             <!-- :class="bg-dark text-light" -->
                          </div>
                     </div>
                </div>
-               <div :class="col ? 'col-4 mt-4' : 'col-12'" v-for="eventi, index in lista_eventi">
+               <div :class="!col ? 'col-4 mt-4' : 'col-12'" v-for="eventi, index in lista_eventi">
 
                     <div class="carta mb-3">
                           <img :src="eventi.img" class="" alt="...">
