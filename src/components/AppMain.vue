@@ -18,9 +18,9 @@ export default {
 <template lang="">
     <AppSlider/>
     <jumbotron/>
+    <ProfessionalCyclingCard/>
     <AppEvents />
     <AppCards />
-    <ProfessionalCyclingCard/>
 </template>
 
 <style lang="">
