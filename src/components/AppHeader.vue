@@ -40,13 +40,15 @@ export default {
                 </div>
             </div>
             <div class="col-3">
-                <div class="d-flex justify-content-end">
+                <div class="btn-container d-flex justify-content-end">
                     <div class="hamburgerMenu d-flex  align-items-center px-4 fs-2 ">
                         <a class="text-decoration-none text-dark" href="#"><i class="fas fa-bars"></i></a>
                     </div>
                     <div class="bg-black text-light btn-padding fw-bold d-flex align-items-center ">
-                        <a href="#"><i class="fas fa-helmet-safety text-light fs-2 pe-4 me-3"></i></a>
-                        <a class="text-decoration-none text-light fs-5" href="#" >Upcoming Events<i class="fas fa-arrow-right text-light ms-2 fs-5"></i></a>
+                        <div class="icon-margin">
+                            <a href="#"><img class="helmet_icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt=""></a>
+                        </div>
+                        <a class="text-decoration-none text-light" href="#" >Upcoming Events<i class="fas fa-arrow-right text-light ms-2 fs-5"></i></a>
                     </div>
                 </div>
             </div>
@@ -110,9 +112,16 @@ header {
             width: 300px;
         }
     }
-
+    
     .btn-padding {
-        padding: 10px 40px;
+        padding: 10px 30px;
+    }
+
+    .icon-margin{
+        margin-right: 30px;
+    }
+    .helmet_icon{
+        filter: invert(100%);
     }
 }
 </style>
