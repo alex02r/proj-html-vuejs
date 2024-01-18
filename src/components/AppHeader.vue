@@ -47,6 +47,27 @@ header{
     .headerCol{
         width: calc(100% / 3);
         height: 100%;
+
+        li{
+            a{
+                position: relative;
+            }
+            a::after{
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                height: 3px;
+                width: 100%;
+                left: 0;
+                background-color: black;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
+                transform: scaleX(0);
+            }
+            a:hover::after{
+                transform: scaleX(1);
+            }
+        }
     }
 
     .logo{
