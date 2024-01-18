@@ -38,8 +38,11 @@ export default {
 
 <style lang="scss" scoped>
 header{
-    height: 120px;
+    width: 100%;
+    height: 110px;
     background-color: white;
+    position: fixed;
+    z-index: 1;
 
     .headerCol{
         width: calc(100% / 3);
