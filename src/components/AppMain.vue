@@ -1,4 +1,5 @@
 <script>
+import ProfessionalCyclingCard from './ProfessionalCyclingCard.vue';
 import AppCards from './AppCards.vue';
 import AppEvents from './AppEvent.vue';
 import jumbotron from './jumbotron.vue';
@@ -9,6 +10,7 @@ export default {
         jumbotron,
         AppEvents,
         AppCards,
+        ProfessionalCyclingCard
     }
 }
 </script>
@@ -18,6 +20,7 @@ export default {
     <jumbotron/>
     <AppEvents />
     <AppCards />
+    <ProfessionalCyclingCard/>
 </template>
 
 <style lang="">
