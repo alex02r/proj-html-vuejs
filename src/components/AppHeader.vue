@@ -2,8 +2,9 @@
 export default {
     name: 'AppHeader',
 
-    props:{
+    props: {
         menu: Array,
+        trainings: Array
     }
 }
 </script>
@@ -19,7 +20,21 @@ export default {
             </div>
             <div class="headerCol d-flex justify-content-center">
                 <ul class="m-0 d-flex list-unstyled">
-                    <li class="fw-bold mx-1 px-1 fs-5" v-for="(item, index) in menu" :key="index" ><a class="text-decoration-none text-dark " href="#">{{item}}</a></li>
+                    <li class="fw-bold mx-1 px-1 fs-5" v-for="(item, index) in menu" :key="index" >
+                        <a class="text-decoration-none text-dark " href="#">{{item}}</a>
+                    </li>
+                    <li class="fw-bold mx-1 px-1 fs-5">
+                        <div class="dropdown">
+                            <a class="text-decoration-none text-dark" href="#">Trainings</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li v-for="(item, index) in trainings" :key="index">
+                                        <a href="#">{{item}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="headerCol d-flex justify-content-end ">
@@ -37,22 +52,23 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-header{
+header {
     width: 100%;
     height: 110px;
     background-color: white;
     position: fixed;
     z-index: 1;
 
-    .headerCol{
+    .headerCol {
         width: calc(100% / 3);
         height: 100%;
 
-        li{
-            a{
+        li {
+            a {
                 position: relative;
             }
-            a::after{
+
+            a::after {
                 content: "";
                 position: absolute;
                 bottom: -8px;
@@ -64,19 +80,38 @@ header{
                 transition-timing-function: ease-in-out;
                 transform: scaleX(0);
             }
-            a:hover::after{
+
+            a:hover::after {
                 transform: scaleX(1);
             }
         }
-    }
 
-    .logo{
-        img{
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+}
+    .logo {
+        img {
             width: 300px;
         }
     }
 
-    .btn-padding{
+    .btn-padding {
         padding: 20px 40px;
     }
 }
