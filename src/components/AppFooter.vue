@@ -1,6 +1,8 @@
 <script>
 export default {
-    
+    props:{
+        array_list: Array
+    }
 }
 </script>
 <template lang="">
@@ -36,13 +38,11 @@ export default {
                         <div class="my-button"> Subscribe <i class="fas fa-arrow-right-long"></i></div>
                     </div>
                 </div>
-                <div class="col-2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam temporibus eum, adipisci maiores quidem dolor quos voluptate quam quae obcaecati explicabo cupiditate itaque impedit dolores consequuntur vero sapiente ea unde!
-    
-                </div>
-                <div class="col-2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam temporibus eum, adipisci maiores quidem dolor quos voluptate quam quae obcaecati explicabo cupiditate itaque impedit dolores consequuntur vero sapiente ea unde!
-    
+                <div class="col-2" v-for="item, index in array_list">
+                    <h3>{{item.name}}</h3>
+                    <ul>
+                        <li v-for="(link, index) in item.links" :key="index" > {{ link }}</li>
+                    </ul>
                 </div>
                 <div class="col-12">
                     <div class="text-center py-4">
