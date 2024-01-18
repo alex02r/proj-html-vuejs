@@ -38,7 +38,7 @@ export default {
 }
 </script>
 <template lang="">
-  <AppHeader :menu="list[1].links"/>
+  <AppHeader :menu="list[1].links" :trainings="list[0].links"/>
   <AppMain />
   <AppFooter :array_list="list"/>
 </template>
