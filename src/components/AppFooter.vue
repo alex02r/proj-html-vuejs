@@ -40,7 +40,7 @@ export default {
                 </div>
                 <div class="col-2" v-for="item, index in array_list">
                     <h3>{{item.name}}</h3>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li v-for="(link, index) in item.links" :key="index" > {{ link }}</li>
                     </ul>
                 </div>
@@ -97,6 +97,14 @@ export default {
                 background-color: $white;
                 color: $black;
                 text-align: center;
+            }
+        }
+        .list-unstyled{
+            li:before{
+                content: '\002D';
+                font-size: 18px;
+                font-weight: 900;
+                margin: 0 0.5em; 
             }
         }
     }
