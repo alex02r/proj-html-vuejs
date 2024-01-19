@@ -168,11 +168,11 @@ export default {
                                    <span class="mese-1">{{ eventi.mese_inizio }}</span> <span class="mese-2">{{ eventi.mese_inizio }}</span>
                           </div>
 
-                         <div class="card-b">
+                         <div class="card-b py-3">
                               <h5 class="card-title">{{ eventi.titolo }}</h5>
-                              <p class="card-text"><i class="fa-regular fa-clock"></i>{{ eventi.data }}</p>
-                               <p><i class="fa-solid fa-location-dot"></i>{{ eventi.luogo }}</p>
-                              <a class="btn btn-crema">{{ eventi.type }}</a>
+                              <p class="card-text py-2"><i class="fa-regular fa-clock"></i> {{ eventi.data }}</p>
+                              <p><i class="fa-solid fa-location-dot"></i> {{ eventi.luogo }}</p>
+                              <a class="btn btn-crema mt-2">{{ eventi.type }}</a>
                          </div>
                     </div>
                     
@@ -190,7 +190,7 @@ export default {
 
 
 .btn-crema {
-     background-color: $second_white;
+     background-color: $grey;
 }
 
 .buttons{

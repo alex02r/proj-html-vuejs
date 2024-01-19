@@ -31,7 +31,7 @@ export default {
         previus() {
             const containerCard = this.$el.querySelector('.container-card');
             containerCard.scrollLeft += 50;
-            this.proCycling.push(this.proCycling.unshift(this.proCycling[4]));
+            this.proCycling.push(this.proCycling.shift());
         },
     },
 }
@@ -59,7 +59,7 @@ export default {
     </div>  
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container-card {
     overflow-x: hidden;
     white-space: nowrap;
