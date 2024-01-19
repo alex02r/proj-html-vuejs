@@ -1,4 +1,6 @@
 <script>
+import { setTransitionHooks } from 'vue';
+
 export default {
     data() {
         return {
@@ -24,14 +26,10 @@ export default {
     },
     methods: {
         next() {
-            const containerCard = this.$el.querySelector('.container-card');
-            containerCard.scrollLeft -= 100;
             this.proCycling.push(this.proCycling.shift())
         },
         previus() {
-            const containerCard = this.$el.querySelector('.container-card');
-            containerCard.scrollLeft += 50;
-            this.proCycling.push(this.proCycling.unshift(this.proCycling[4]));
+            this.proCycling.unshift(this.proCycling.pop());
         },
     },
 }
@@ -44,8 +42,8 @@ export default {
                 <h2 class="fw-bold">Our Professional Cycling Trainings</h2>
                 <span>Learn from the mountain biking expert.</span>
             </div>
-            <div class="container-card d-flex">
-                <div class="myCard" v-for="card in proCycling">
+            <div class="d-flex">
+                <div class="myCard" v-for="card in proCycling.slice(0,4)">
                     <div class="card-title fw-bold fs-4">{{card.title}}</div>
                     <img :src=card.image alt="">
                     <button class="view text-white bg-black px-4 py-1">View</button>
@@ -59,12 +57,7 @@ export default {
     </div>  
 </template>
 
-<style lang="scss">
-.container-card {
-    overflow-x: hidden;
-    white-space: nowrap;
-}
-
+<style lang="scss" scoped>
 .myrow {
     margin-top: 200px;
 }
