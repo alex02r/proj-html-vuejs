@@ -136,7 +136,7 @@ export default {
 }
 </script>
 <template lang="">
-     <div class="container" v-motion :delay="200" :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0}">
+     <div class="container my-5" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition:{ duration: 1000},}">
           <div class="row">
                <div class="col-12">
                     <div class="text-center">

@@ -81,7 +81,7 @@ export default {
                     <!-- Pacchetto Basic -->
                     <div class="col-4">
                         <div class="packages text-center">
-                            <div class="inner-card">
+                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 800},}">
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
@@ -112,7 +112,7 @@ export default {
                     <div class="col-4">
 
                         <div class="packages text-center">
-                            <div class="inner-card">
+                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 900},}">
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
@@ -143,7 +143,7 @@ export default {
                     <div class="col-4">
                         <div class="packages text-center">
 
-                            <div class="inner-card">
+                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 1000},}">
                                 <!-- Fronte della card -->
                                 <div class="front-card">
                                     <img class="icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt="">
@@ -178,10 +178,10 @@ export default {
         <div class="container">
             <div class="row">
                 <h2 class="fw-bolder text-center">Resent New & Articles</h2>
-                <span class="text-center">Select pricing plan to get more</span>
+                <span class="text-center" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0}">Select pricing plan to get more</span>
 
                 <!-- Card -->
-                <div class="cards d-flex justify-content-center">
+                <div class="cards d-flex justify-content-center" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 1000},}">
                     <div class="col-3" v-for="(card, index) in new_articles" :key="index">
                         <div class="card mx-4 shadow">
                             <div class="pt-3 px-3">

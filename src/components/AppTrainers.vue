@@ -34,11 +34,11 @@ export default {
 <template lang="">
     <div class="container py-5">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 1000},}">
                 <h2 class="fw-bold ">Our Expert Trainers</h2>
                 <p class="text-secondary">Learn to ride a bike from the experts</p>
             </div>
-            <div class="col-3" v-for="(item, index) in trainersList" :key="index" >
+            <div class="col-3" v-for="(item, index) in trainersList" :key="index" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition: { duration: `${index + 6}00`},}">
                 <div class="my-card">
                     <div class="img-area">
                         <img :src="item.img" alt="">
