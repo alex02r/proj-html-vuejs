@@ -5,7 +5,7 @@ import AppEvents from './AppEvent.vue';
 import jumbotron from './jumbotron.vue';
 import AppSlider from './AppSlider.vue';
 export default {
-    components:{
+    components: {
         AppSlider,
         jumbotron,
         AppEvents,
