@@ -59,7 +59,7 @@ export default {
     </div>  
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container-card {
     overflow-x: hidden;
     white-space: nowrap;
