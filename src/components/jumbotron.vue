@@ -36,7 +36,7 @@ export default {
                         <p>We always ride with the best equipment, respecting nature and fun.</p>
                     </div>
                 </div>
-                <button class="text-center mt-4" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800},}">Get to know us <i class="fa-solid fa-arrow-right p-2"></i></button>
+                <button class="text-center mt-4 border-0 rounded-1" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800},}">Get to know us <i class="fa-solid fa-arrow-right p-2"></i></button>
             </div>
         </div>
     </div>
