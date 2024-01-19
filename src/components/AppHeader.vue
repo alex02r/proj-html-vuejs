@@ -62,7 +62,7 @@ header {
     background-color: white;
     position: fixed;
     z-index: 1;
-
+    
     li {
         a {
             position: relative;
