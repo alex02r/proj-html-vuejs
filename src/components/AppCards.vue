@@ -80,8 +80,8 @@ export default {
 
                     <!-- Pacchetto Basic -->
                     <div class="col-4">
-                        <div class="packages text-center">
-                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 800},}">
+                        <div class="packages text-center" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 800},}">
+                            <div class="inner-card">
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
@@ -111,8 +111,8 @@ export default {
                     <!-- Pacchetto Standard -->
                     <div class="col-4">
 
-                        <div class="packages text-center">
-                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 900},}">
+                        <div class="packages text-center" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 900},}">
+                            <div class="inner-card">
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
@@ -141,9 +141,9 @@ export default {
 
                     <!-- Pacchetto Premium -->
                     <div class="col-4">
-                        <div class="packages text-center">
+                        <div class="packages text-center" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 1000},}">
 
-                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 1000},}">
+                            <div class="inner-card">
                                 <!-- Fronte della card -->
                                 <div class="front-card">
                                     <img class="icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt="">
@@ -174,7 +174,7 @@ export default {
     </section>
 
     <!-- Sezione New Articles -->
-    <section class="new-articles">
+    <section class="new-articles my-padding">
         <div class="container">
             <div class="row">
                 <h2 class="fw-bolder text-center">Resent New & Articles</h2>
@@ -223,7 +223,7 @@ export default {
     }
 
     .packages {
-        height: 500px;
+        height: 600px;
         margin: 30px;
         perspective: 1000px;
 
@@ -273,7 +273,7 @@ export default {
 
                 ul {
                     list-style: none;
-                    margin: 50px 0;
+                    margin: 80px 0;
                     padding: 0 30px;
 
                     li {
@@ -333,7 +333,8 @@ export default {
 }
 
 .new-articles {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 150px;
     background-color: $grey;
 
     .cards {

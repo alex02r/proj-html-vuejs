@@ -9,7 +9,7 @@ export default {
     <footer class="pt-5">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-3">
+                <div class="col-3" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition:{ duration: 800},}">
                     <div class="logo">
                         <img src="../assets/logo-footer-gobike.png" alt="Logo">
                     </div>
@@ -30,21 +30,21 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition:{ duration: 900},}">
                     <h3>Join Our Newsletter</h3>
                     <span>Subscribe to receive useful information.</span>
                     <div class="footer-input-group">
-                        <input type="text" class="my-input" placeholder="Your Email Address" id="email" name="email">
-                        <div class="my-button"> Subscribe <i class="fas fa-arrow-right-long"></i></div>
+                        <input type="text" class="my-input" placeholder="Your Email Address" id="email" name="email" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 900},}">
+                        <div class="my-button" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 1000},}"> Subscribe <i class="fas fa-arrow-right-long"></i></div>
                     </div>
                 </div>
-                <div class="col-2" v-for="item, index in array_list">
+                <div class="col-2" v-for="item, index in array_list" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition:{ duration: 1000},}">
                     <h3>{{item.name}}</h3>
                     <ul class="list-unstyled">
                         <li v-for="(link, index) in item.links" :key="index" > {{ link }}</li>
                     </ul>
                 </div>
-                <div class="col-12">
+                <div class="col-12" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition:{ duration: 1000},}">
                     <div class="text-center py-4">
                         &copy; 2024 Team#2 - Boolean
                     </div>

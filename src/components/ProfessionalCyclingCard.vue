@@ -38,12 +38,12 @@ export default {
 <template lang="">
     <div class="container">
         <div class="myrow">
-            <div class="col-12 d-flex align-items-center flex-column">
+            <div class="col-12 d-flex align-items-center flex-column" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition:{ duration: 1000},}">
                 <h2 class="fw-bold">Our Professional Cycling Trainings</h2>
                 <span>Learn from the mountain biking expert.</span>
             </div>
             <div class="d-flex justify-content-center">
-                <div class="myCard" v-for="card in proCycling.slice(0,4)">
+                <div class="myCard" v-for="card, index in proCycling.slice(0,4)" :key="index" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition:{ duration: `${index + 8}00`},}">
                     <div class="card-title fw-bold fs-4">{{card.title}}</div>
                     <img :src=card.image alt="">
                     <button class="view text-white bg-black px-4 py-1">View</button>
@@ -81,10 +81,12 @@ export default {
 }
 
 .view {
+    border: none;
     position: absolute;
     left: 10px;
     bottom: 20px;
     display: none;
+    font-weight: 600;
 }
 
 .myCard:hover .view {
