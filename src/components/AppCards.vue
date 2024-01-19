@@ -174,7 +174,7 @@ export default {
     </section>
 
     <!-- Sezione New Articles -->
-    <section class="new-articles">
+    <section class="new-articles my-padding">
         <div class="container">
             <div class="row">
                 <h2 class="fw-bolder text-center">Resent New & Articles</h2>
@@ -333,7 +333,8 @@ export default {
 }
 
 .new-articles {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 150px;
     background-color: $grey;
 
     .cards {
