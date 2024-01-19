@@ -80,8 +80,8 @@ export default {
 
                     <!-- Pacchetto Basic -->
                     <div class="col-4">
-                        <div class="packages text-center">
-                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 800},}">
+                        <div class="packages text-center" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 800},}">
+                            <div class="inner-card">
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
@@ -111,8 +111,8 @@ export default {
                     <!-- Pacchetto Standard -->
                     <div class="col-4">
 
-                        <div class="packages text-center">
-                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 900},}">
+                        <div class="packages text-center" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 900},}">
+                            <div class="inner-card">
 
                                 <!-- Fronte della card -->
                                 <div class="front-card">
@@ -141,9 +141,9 @@ export default {
 
                     <!-- Pacchetto Premium -->
                     <div class="col-4">
-                        <div class="packages text-center">
+                        <div class="packages text-center" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 1000},}">
 
-                            <div class="inner-card" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition:{ duration: 1000},}">
+                            <div class="inner-card">
                                 <!-- Fronte della card -->
                                 <div class="front-card">
                                     <img class="icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt="">
