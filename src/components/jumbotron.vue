@@ -9,13 +9,13 @@ export default {
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <div class="bike">
+                <div class="bike" v-motion :delay="200" :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition: { duration: 1000},}">
                     <img class="bike-player play" src="../assets/bike-circle.png" alt="">
                     <img class="bike-player" src="../assets/bike-player.png" alt="">
                 </div>
             </div>
             <div class="col-4">
-                <div class="title">
+                <div class="title" v-motion :delay="200" :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800},}">
                     <h2>Do you want to be a professional cyclist?</h2>
                     <p>We offer 6 courses of varying difficulty and beautiful scenery that cyclists of all levels can enjoy. You will learn cycling from professionals with our competent and experienced staff. You will have a lot of fun with our amazing space.
                         <br>
