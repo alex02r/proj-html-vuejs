@@ -112,20 +112,16 @@ header {
         align-items: center;
         gap: 20px;
         background-color: $black;
-        padding: 5px 20px;
+        padding: 10px 20px;
         border-radius: 5px;
-        img{
-
-            width: 80px;
+        .helmet_icon{
+            width: 60px;
+            filter: invert(100%);
         }
     }
-
     .icon-margin{
         margin-right: 30px;
     }
-    .helmet_icon{
-        padding: 10px;
-        filter: invert(100%);
-    }
+    
 }
 </style>

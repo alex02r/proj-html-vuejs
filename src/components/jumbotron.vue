@@ -53,7 +53,7 @@ export default {
     align-items: center;
     .bike-player {
         position: absolute;
-        width: 80%;
+        width: 70%;
     }
     .play{
         animation-name: ruota;
