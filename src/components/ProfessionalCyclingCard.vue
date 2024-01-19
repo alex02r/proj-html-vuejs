@@ -59,7 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .myrow {
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .myCard {
@@ -67,6 +67,7 @@ export default {
     border: solid black 5px;
     position: relative;
     color: white;
+    width: calc(100% / 4 - 20px)
 }
 
 .card-title {
