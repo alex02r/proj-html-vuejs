@@ -52,7 +52,7 @@ export default {
         <div class="info">
             <h1>{{ listImg[currentImg].name }}</h1>
             <h5 class="my-4">Learn cycling from the pros.</h5>
-            <button class="my-button">Learn More -></button>
+            <button class="my-button rounded">Learn More <i class="fas fa-right-long"></i></button>
         </div>
         <div class="next" @click="nextImg"> <i class="fas fa-angle-right"></i></div>
         <div class="prev" @click="prevImg"> <i class="fas fa-chevron-left"></i></div>
@@ -78,9 +78,9 @@ export default {
                 border: none;
                 color: $white;
                 background-color: $black;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: 600;
-                padding: 20px;
+                padding: 20px 40px;
             }
         }
         .next, .prev{
