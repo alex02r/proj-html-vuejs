@@ -40,8 +40,8 @@ export default {
                 </div>
             </div>
             <div class="col-3">
-                <div class="d-flex justify-content-end">
-                    <div class="hamburgerMenu d-flex align-items-center px-4 fs-2 ">
+                <div class="d-flex">
+                    <div class="hamburgerMenu d-flex align-items-center px-3 fs-2 ">
                         <a class="text-decoration-none text-dark" href="#"><i class="fas fa-bars"></i></a>
                     </div>
                     <div class="my-btn">
