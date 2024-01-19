@@ -9,34 +9,34 @@ export default {
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <div class="bike" v-motion :delay="200" :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition: { duration: 1000},}">
+                <div class="bike" v-motion :initial="{ opacity: 0, x: -100}" :visibleOnce="{ opacity: 1, x: 0, transition: { duration: 1000},}">
                     <img class="bike-player play" src="../assets/bike-circle.png" alt="">
                     <img class="bike-player" src="../assets/bike-player.png" alt="">
                 </div>
             </div>
             <div class="col-4">
-                <div class="title" v-motion :delay="200" :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800},}">
+                <div class="title" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800},}">
                     <h2>Do you want to be a professional cyclist?</h2>
                     <p>We offer 6 courses of varying difficulty and beautiful scenery that cyclists of all levels can enjoy. You will learn cycling from professionals with our competent and experienced staff. You will have a lot of fun with our amazing space.
                         <br>
                         <img src="../assets/divider.jpg" alt="divider" class="w-25">
                     </p>
                 </div>
-                <div class="paragraph">
+                <div class="paragraph" v-motion :initial="{ opacity: 0, x: 100}" :visibleOnce="{ opacity: 1, x: 0, transition: { duration: 1200},}">
                     <img class="icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png"  alt="">
                     <div>
                         <h3>Professional Team</h3>
                         <p>We make you professional by adding your sincerity as well as professionalism.</p>
                     </div>
                 </div>
-                <div class="paragraph">
+                <div class="paragraph" v-motion :initial="{ opacity: 0, x: 100}" :visibleOnce="{ opacity: 1, x: 0, transition: { duration: 1200},}">
                     <img class="icon" src="https://cdn-icons-png.flaticon.com/128/972/972998.png" alt="">
                     <div>
                         <h3>Professional Trainings</h3>
                         <p>We always ride with the best equipment, respecting nature and fun.</p>
                     </div>
                 </div>
-                <button class="text-center mt-4">Get to know us <i class="fa-solid fa-arrow-right p-2"></i></button>
+                <button class="text-center mt-4" v-motion :initial="{ opacity: 0, y: 100}" :visibleOnce="{ opacity: 1, y: 0, transition: { duration: 800},}">Get to know us <i class="fa-solid fa-arrow-right p-2"></i></button>
             </div>
         </div>
     </div>
