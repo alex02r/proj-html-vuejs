@@ -42,7 +42,7 @@ export default {
             <div class="col-3">
                 <div class="d-flex">
                     <div class="hamburgerMenu d-flex align-items-center px-3 fs-2 ">
-                        <a class="text-decoration-none text-dark" href="#"><i class="fas fa-bars"></i></a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i></button>
                     </div>
                     <div class="my-btn">
                         <img class="helmet_icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt="">
@@ -53,16 +53,27 @@ export default {
         </div>
     </div>
 </header>
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
+</div>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partial/variables' as *;
+
 header {
     width: 100%;
     background-color: white;
     position: fixed;
     z-index: 1;
-    
+
     li {
         a {
             position: relative;
@@ -87,8 +98,8 @@ header {
     }
 
     .dropdown {
-    position: relative;
-    display: inline-block;
+        position: relative;
+        display: inline-block;
     }
 
     .dropdown-content {
@@ -96,7 +107,7 @@ header {
         position: absolute;
         background-color: #f9f9f9;
         min-width: 170px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         padding: 12px 16px;
         z-index: 1;
         border-radius: 8px;
@@ -106,7 +117,7 @@ header {
         display: block;
     }
 
-    .my-btn{
+    .my-btn {
         margin: 10px 0;
         display: flex;
         align-items: center;
@@ -114,14 +125,16 @@ header {
         background-color: $black;
         padding: 10px 20px;
         border-radius: 5px;
-        .helmet_icon{
+
+        .helmet_icon {
             width: 60px;
             filter: invert(100%);
         }
     }
-    .icon-margin{
+
+    .icon-margin {
         margin-right: 30px;
     }
-    
+
 }
 </style>

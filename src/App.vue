@@ -3,7 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 export default {
-  components:{
+  components: {
     AppHeader,
     AppMain,
     AppFooter
@@ -13,26 +13,26 @@ export default {
     return {
       list: [
         {
-        name: 'Trainings',
-        links: [
-          'Riding Lesson',
-          'Safe Driving',
-          'Mountain Bike',
-          'Trail Drive',
-          'Pedaling'
-        ]
-      },
-      {
-        name: 'Quick Links',
-        links: [
-          'Home',
-          'About Us',
-          'Blog',
-          'Packages',
-          'Contact'
-        ]
-      }
-    ],
+          name: 'Trainings',
+          links: [
+            'Riding Lesson',
+            'Safe Driving',
+            'Mountain Bike',
+            'Trail Drive',
+            'Pedaling'
+          ]
+        },
+        {
+          name: 'Quick Links',
+          links: [
+            'Home',
+            'About Us',
+            'Blog',
+            'Packages',
+            'Contact'
+          ]
+        }
+      ],
     }
   },
 }
@@ -43,5 +43,5 @@ export default {
   <AppFooter :array_list="list"/>
 </template>
 <style lang="scss">
-  @use './styles/generals.scss';
+@use './styles/generals.scss';
 </style>
