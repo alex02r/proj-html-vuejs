@@ -29,9 +29,7 @@ export default {
             this.proCycling.push(this.proCycling.shift())
         },
         previus() {
-            const containerCard = this.$el.querySelector('.container-card');
-            containerCard.scrollLeft += 50;
-            this.proCycling.push(this.proCycling.shift());
+            this.proCycling.unshift(this.proCycling.pop());
         },
     },
 }
@@ -44,7 +42,7 @@ export default {
                 <h2 class="fw-bold">Our Professional Cycling Trainings</h2>
                 <span>Learn from the mountain biking expert.</span>
             </div>
-            <div class="d-flex">
+            <div class="d-flex justify-content-center">
                 <div class="myCard" v-for="card in proCycling.slice(0,4)">
                     <div class="card-title fw-bold fs-4">{{card.title}}</div>
                     <img :src=card.image alt="">
@@ -52,19 +50,14 @@ export default {
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-center">
-                <button class="my-4 bg-white text-black px-4 mx-1" @click="previus"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="my-4 bg-white text-black px-4 mx-1" @click="next"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="my-4 bg-white text-black py-3 px-4 mx-1" @click="previus"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="my-4 bg-white text-black py-3 px-4 mx-1" @click="next"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </div>  
 </template>
 
 <style lang="scss" scoped>
-.container-card {
-    overflow-x: hidden;
-    white-space: nowrap;
-}
-
 .myrow {
     margin-top: 200px;
 }
