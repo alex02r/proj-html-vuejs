@@ -151,7 +151,7 @@ header {
         margin: 10px 0;
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
         background-color: $black;
         padding: 10px 20px;
         border-radius: 5px;
