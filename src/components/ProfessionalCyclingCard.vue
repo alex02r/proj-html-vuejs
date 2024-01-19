@@ -31,7 +31,7 @@ export default {
         previus() {
             const containerCard = this.$el.querySelector('.container-card');
             containerCard.scrollLeft += 50;
-            this.proCycling.push(this.proCycling.unshift(this.proCycling[4]));
+            this.proCycling.push(this.proCycling.shift());
         },
     },
 }
