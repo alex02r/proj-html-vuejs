@@ -40,7 +40,7 @@ export default {
                 </div>
             </div>
             <div class="col-4">
-                <div class="d-flex">
+                <div class="d-flex justify-content-end">
                     <div class="hamburgerMenu d-flex align-items-center px-4 fs-2 ">
                         <a class="text-decoration-none text-dark" href="#"><i class="fas fa-bars"></i></a>
                     </div>
@@ -112,7 +112,7 @@ header {
         align-items: center;
         gap: 20px;
         background-color: $black;
-        padding: 10px 20px;
+        padding: 5px 20px;
         border-radius: 5px;
         img{
 
@@ -124,6 +124,7 @@ header {
         margin-right: 30px;
     }
     .helmet_icon{
+        padding: 10px;
         filter: invert(100%);
     }
 }
