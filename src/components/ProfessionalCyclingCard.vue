@@ -29,7 +29,9 @@ export default {
             this.proCycling.push(this.proCycling.shift())
         },
         previus() {
-            this.proCycling.unshift(this.proCycling.pop());
+            const containerCard = this.$el.querySelector('.container-card');
+            containerCard.scrollLeft += 50;
+            this.proCycling.push(this.proCycling.shift());
         },
     },
 }
@@ -58,6 +60,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.container-card {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
 .myrow {
     margin-top: 200px;
 }

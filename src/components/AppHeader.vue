@@ -40,7 +40,7 @@ export default {
                 </div>
             </div>
             <div class="col-4">
-                <div class="d-flex">
+                <div class="d-flex justify-content-end">
                     <div class="hamburgerMenu d-flex align-items-center px-4 fs-2 ">
                         <a class="text-decoration-none text-dark" href="#"><i class="fas fa-bars"></i></a>
                     </div>
@@ -62,7 +62,7 @@ header {
     background-color: white;
     position: fixed;
     z-index: 1;
-
+    
     li {
         a {
             position: relative;
@@ -114,17 +114,14 @@ header {
         background-color: $black;
         padding: 10px 20px;
         border-radius: 5px;
-        img{
-
-            width: 80px;
+        .helmet_icon{
+            width: 60px;
+            filter: invert(100%);
         }
     }
-
     .icon-margin{
         margin-right: 30px;
     }
-    .helmet_icon{
-        filter: invert(100%);
-    }
+    
 }
 </style>
