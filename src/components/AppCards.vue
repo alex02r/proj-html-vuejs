@@ -223,7 +223,7 @@ export default {
     }
 
     .packages {
-        height: 500px;
+        height: 600px;
         margin: 30px;
         perspective: 1000px;
 
@@ -273,7 +273,7 @@ export default {
 
                 ul {
                     list-style: none;
-                    margin: 50px 0;
+                    margin: 80px 0;
                     padding: 0 30px;
 
                     li {
