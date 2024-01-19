@@ -42,7 +42,7 @@ export default {
             <div class="col-3">
                 <div class="d-flex">
                     <div class="hamburgerMenu d-flex align-items-center px-3 fs-2 ">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i></button>
+                        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i></button>
                     </div>
                     <div class="my-btn">
                         <img class="helmet_icon" src="https://cdn-icons-png.flaticon.com/128/882/882115.png" alt="">
@@ -55,12 +55,42 @@ export default {
 </header>
 <!-- Offcanvas -->
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <div class="offcanvas-header justify-content-end">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <p>Try scrolling the rest of the page to see this option in action.</p>
+        <div class="img-off">
+            <img src="../assets/loader-gobike.png" alt="">
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="contact">
+                <div class="my-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <span>+1 (234) 567 89 10</span>
+            </div>
+            <div class="contact">
+                <div class="my-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <span>example@example.com</span>
+            </div>
+            <div class="contact">
+                <div class="my-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>New Jersey, USA</span>
+            </div>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div class="last-off">
+            <h5>&copy; 2022 - Gobike</h5>
+        </div>
     </div>
 </div>
 </template>
@@ -136,5 +166,53 @@ header {
         margin-right: 30px;
     }
 
+}
+.img-off{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    img{
+        width: 200px;
+    }
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-weight: 800;
+    }
+    .contact{
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .my-icon{
+            background-color: $black;
+            border-radius: 10px;
+            i{
+                padding: 10px 20px;
+                font-size: 60px;
+                color: $white;
+            }
+            margin: 10px 0;
+        }
+        span{
+            font-size: 20px;
+        }
+    }
+    .icons{
+        display: flex;
+        gap: 10px;
+        i{
+            font-size: 30px;
+        }
+    }
+}
+.last-off{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
